@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Supporting Marriage Custom
  * Description:       Custom functionality for supportingmarriage.com (member IDs, My Account profile tabs, secure member files, Forminator tweaks, etc.). Moved out of the child theme functions.php.
- * Version:           1.0.0
+ * Version:           1.1.0
  * Author:            Intertec Data Solutions
  * Requires at least: 5.8
  * Requires PHP:      7.4
@@ -36,6 +36,7 @@ function smc_load_custom_functions() {
 	}
 
 	require_once SMC_PLUGIN_DIR . 'includes/custom-functions.php';
+	require_once SMC_PLUGIN_DIR . 'includes/member-id-fix.php';
 }
 add_action( 'after_setup_theme', 'smc_load_custom_functions', 0 );
 

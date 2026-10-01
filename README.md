@@ -49,5 +49,7 @@ loaded twice or not loaded at all.
 ## Notes
 
 - Don't edit the code in both places. From now on, edit `includes/custom-functions.php` only.
+- `includes/member-id-fix.php` (v1.1.0) fixes Member IDs being lost when account activation takes
+  longer than 5 minutes, and adds Users → Repair Member IDs for users already affected.
 - The code was moved as-is (no refactoring), so behaviour is identical. Splitting it into
   smaller files by feature can be done later as a separate, tested change.
